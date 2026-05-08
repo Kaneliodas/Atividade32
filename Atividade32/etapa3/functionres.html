@@ -1,0 +1,16 @@
+<script>
+  function calcular(n) {
+     if (typeof n !== "number") {
+    throw new Error("O valor fornecido deve ser um número.");
+  }
+    return n * 2;
+  }
+
+  function processar(valor) {
+    let resultado = calcular(valor);
+    console.log("Resultado:", resultado);
+  }
+
+  processar(5);
+  processar("5"); // Isso causará um erro, pois "5" é uma string, não um número.
+</script>
